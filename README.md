@@ -3,3 +3,4 @@ A* Algorithm is implemented in this game
 
 The Game is implemented using cpp and to see proper graphics you must run it on turboc.
 Just copy all the files in bin directory and that's all!
+Do not forget to change your init graphics BGI path.
