@@ -380,8 +380,6 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
 		}
 		else
 		goal=same;
-
-
 	}
 	if(start==goal)
 	 {	temp=start;
@@ -411,11 +409,11 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
 	 //getch();
 		closed[done++]=current;
 		closed[done]=NULL;
-	  /* if(count==0)
+	   if(count==0)
 	   {
-		pathcolor(closed[done-1],6);
-		getch();
-	   }*/
+		//pathcolor(closed[done-1],6);
+	     //	getch();
+	   }
 
 		remove(current,next,list);
 		i=current->mrow;
@@ -439,7 +437,7 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
 					{
 						next[list++]=a[i-1][j-1+k];
 						flag=1;
-				    //		pathcolor(next[list-1],15);
+					//	pathcolor(next[list-1],15);
 					}
 				}
 			}
@@ -450,7 +448,7 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
 				{
 					next[list++]=a[i][j+1];
 					flag=1;
-				     // 	pathcolor(next[list-1],15);
+				      //	pathcolor(next[list-1],15);
 				}
 			}
 			for(k=0;k<3;k++)
@@ -462,7 +460,7 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
 					{
 						next[list++]=a[i+1][j+1-k];
 						flag=1;
-				    //		pathcolor(next[list-1],15);
+					  //	pathcolor(next[list-1],15);
 					}
 				}
 			}
@@ -473,7 +471,7 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
 				{
 					next[list++]=a[i][j-1];
 					flag=1;
-				  //	pathcolor(next[list-1],15);
+					//pathcolor(next[list-1],15);
 				}
 			}
 			if(flag==1)
@@ -534,7 +532,7 @@ if(count==0  || count==1 || (count==3 && bot3_run==0) || count==2)
        }
        if(count==3 && bot3_run==0)
        {
-		gotoxy(70,7);
+		gotoxy	(70,7);
 		//cout<<goal->mrow<<" ,"<<goal->mcol;
 		bot3_path[0]=goal;
 		//bot3_path[bot3_diff]=NULL;
@@ -647,14 +645,14 @@ node *temp1;
 	temp=temp->parent;
 	while(temp->parent!=NULL)
 	{
-	 /*	if(count==0)
+		if(count==0)
 		{
-		setcolor(10) ;
-		setfillstyle(SOLID_FILL,10);
-		circle(temp->cx,temp->cy,3);
-		floodfill(temp->cx,temp->cy,10);
-		} */
-		//getch();
+	 //	setcolor(10) ;
+	   //	setfillstyle(SOLID_FILL,10);
+	 //	circle(temp->cx,temp->cy,3);
+	   //	floodfill(temp->cx,temp->cy,10);
+		}
+	       //	getch();
 
 		temp1=temp;
 
@@ -1147,7 +1145,7 @@ void main()
  int game=1;
  int gd=DETECT,gm;
  FILE*fp;
- initgraph(&gd,&gm,"C:\\turboc3\\BGI");
+ initgraph(&gd,&gm,"C:\\TC\\BGI");
  once=0;
  int run=0;
  int i,s;
